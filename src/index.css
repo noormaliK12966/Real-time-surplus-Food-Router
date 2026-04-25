@@ -1,0 +1,35 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&family=Public+Sans:wght@300;400;500;600;700&display=swap');
+
+@theme {
+  --font-sans: "Public Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+
+  --color-brand-primary: #00652c;
+  --color-brand-primary-container: #15803d;
+  --color-brand-secondary: #a73a00;
+  --color-brand-secondary-container: #fd651e;
+  --color-brand-secondary-fixed: #ffdbce;
+  --color-brand-on-secondary-fixed: #370e00;
+  --color-brand-background: #f7f9fb;
+  --color-brand-surface: #f7f9fb;
+  --color-brand-primary-fixed: #95f8a7;
+  --color-brand-on-primary-fixed: #00210a;
+
+  --shadow-hard: 4px 4px 0px 0px rgba(15, 23, 42, 1);
+}
+
+@layer base {
+  body {
+    @apply bg-brand-background text-zinc-900 font-sans;
+  }
+}
+
+.hard-elevation {
+  box-shadow: 4px 4px 0px 0px rgba(15, 23, 42, 1);
+}
+
+.active-press:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px 0px rgba(15, 23, 42, 1);
+}
